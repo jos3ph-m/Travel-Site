@@ -24,6 +24,8 @@ body {
   width: 80%;
   margin: auto;
   padding: 2rem 0;
+  z-index: 2;
+  position: relative;
 }
 
 .line1,
@@ -172,11 +174,11 @@ body {
 }
 
 .cursor.nav-active {
-  background: rgba(86, 124, 228, 0.5);
+  background: rgb(86, 124, 228);
   transform: scale(3);
 }
 .cursor.explore-active {
-  background: rgba(255, 255, 255);
+  background: rgb(255, 255, 255);
   transform: scale(3);
 }
 .cursor-text {
@@ -214,4 +216,8 @@ body {
 
 .scrollmagic-pin-spacer {
   position: static !important;
+}
+
+body.hide {
+  overflow: hidden;
 }
