@@ -135,6 +135,8 @@ barba.init({
       },
       enter({ current, next }) {
         let done = this.async();
+        // Scroll to the top
+        window.scrollTo(0, 0);
 
         const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
         tl.fromTo(
