@@ -103,12 +103,14 @@ function navToggle(e) {
 }
 
 // Barba Page Transitions
+const logo = document.querySelector("#logo");
 barba.init({
   views: [
     {
       namespace: "home",
       beforeEnter() {
         animateSlides();
+        logo.href = "./index.html";
       },
       beforeLeave() {
         slideScene.destroy();
@@ -118,6 +120,9 @@ barba.init({
     },
     {
       namespace: "fashion",
+      beforeEnter() {
+        logo.href = "../index.html";
+      },
     },
   ],
   transitions: [
