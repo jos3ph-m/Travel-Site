@@ -132,6 +132,10 @@ barba.init({
           { y: "0%", ease: "power2.inOut" }
         );
       },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
+      },
     },
   ],
   transitions: [
