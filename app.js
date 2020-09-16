@@ -164,6 +164,11 @@ barba.init({
   ],
 });
 
+function detailAnimation() {
+  controller = new ScrollMagic.Controller();
+  const slides = document.querySelectorAll(".detail-slide");
+}
+
 // Event Listeners
 burger.addEventListener("click", navToggle);
 window.addEventListener("mousemove", cursor);
